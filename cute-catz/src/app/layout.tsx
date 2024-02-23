@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { SessionProviderWithChildren } from "@/components/providers/SessionProviders";
 import "./globals.scss";
 import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +19,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <SessionProviderWithChildren>
-        <body className={inter.className}>{children}</body>
+      <header>
+        <Header></Header>
+      </header>
+      <body className={inter.className}>
+        <SessionProviderWithChildren>{children}</SessionProviderWithChildren>
+      </body>
+      <footer>
         <Footer></Footer>
-      </SessionProviderWithChildren>
+      </footer>
     </html>
   );
 }
