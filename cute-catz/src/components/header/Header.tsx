@@ -1,4 +1,4 @@
-import "@/app/page.module.scss"
+
 
 export default function Header() {
 

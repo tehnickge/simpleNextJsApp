@@ -1,0 +1,10 @@
+.wrapper { 
+  background-color: red;
+}
+
+.footer {
+    &__label {
+      color: aqua;
+
+    }
+  }

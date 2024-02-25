@@ -1,0 +1,61 @@
+@import "./../../common/variables";
+
+$btn-variant: (
+    primary blueviolet white,
+    success palegreen black,
+    danger indianred white,
+    default white black,
+);
+
+$btn-size: (
+    xs 8px,
+    sm 12px,
+    md 16px,
+    lg 24px,
+);
+
+@each $name, $bg-color, $font-color in $btn-variant {
+    .btn.btn-#{$name} {
+        background-color: $bg-color;
+        color: $font-color;
+    }
+}
+
+@each $name, $size in $btn-size {
+    .btn.btn-#{$name} {
+        padding: $size;
+        border-radius: $size + 2px; 
+    }
+}
+
+.btn {
+    transform: translateY(15px);
+    border: none !important;
+    transform-style:preserve-3d;
+    perspective: 2000px;
+    transition: 1s;
+    animation: test 2s ease-in-out 0.5s infinite normal none;
+}
+
+.btn:hover {
+    background-color: $color-black;
+    transform: translateY(30px);
+}
+
+@keyframes test {
+    0% {
+        transform: translateY(15px);
+    }
+    25% {
+        transform: translateX(15px);
+    }
+    50% {
+        transform: translateX(-15px);
+    }
+    75% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateZ(-10px) translateY(-10px);
+    }
+}

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { SessionProviderWithChildren } from "@/components/providers/SessionProviders";
-import "./globals.scss";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
+import "./globals.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,15 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <header>
-        <Header></Header>
-      </header>
       <body className={inter.className}>
-        <SessionProviderWithChildren>{children}</SessionProviderWithChildren>
+        <h1> ABOBA</h1>
+        <SessionProviderWithChildren>
+          <Header></Header>
+          {children}
+          <Footer></Footer>
+        </SessionProviderWithChildren>
       </body>
-      <footer>
-        <Footer></Footer>
-      </footer>
     </html>
   );
 }

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+
+.micro-5-regular {
+  font-family: "Micro 5", sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  font-style: normal;
+
+  &__large {
+    font-size: 200px;
+  }
+}
