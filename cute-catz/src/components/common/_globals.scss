@@ -1,16 +1,14 @@
-
 html,
 body {
   min-width: 100vw;
   max-width: 100vw;
+  display: flex;
+  box-sizing: border-box;
   background-color: $color-skin;
+  justify-items: center;
+  flex-direction: column;
 
 }
 body {
   margin: 0 auto;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  
-}
-

@@ -1,61 +1,94 @@
 @import "./../../common/variables";
+@import "./../../common/fonts";
 
 $btn-variant: (
-    primary blueviolet white,
-    success palegreen black,
-    danger indianred white,
-    default white black,
+    primary blueviolet white none,
+    success palegreen black none,
+    danger indianred white none,
+    default white black none,
+    primary-outline transparent blueviolet blueviolet 25px,
 );
 
 $btn-size: (
     xs 8px,
-    sm 12px,
-    md 16px,
-    lg 24px,
+    sm 16px,
+    md 24px,
+    lg 32px,
 );
 
-@each $name, $bg-color, $font-color in $btn-variant {
+@each $name, $bg-color, $font-color, $border in $btn-variant {
     .btn.btn-#{$name} {
         background-color: $bg-color;
         color: $font-color;
+        @if ($border != none) {
+        border: 8px solid $font-color;
+        }
+        @else {
+            border: none;
+        }
+
     }
 }
 
 @each $name, $size in $btn-size {
     .btn.btn-#{$name} {
         padding: $size;
-        border-radius: $size + 2px; 
+        border-radius: $size + 2px;
+        font-size: $size * 1,5; 
     }
 }
 
 .btn {
-    transform: translateY(15px);
-    border: none !important;
-    transform-style:preserve-3d;
-    perspective: 2000px;
-    transition: 1s;
-    animation: test 2s ease-in-out 0.5s infinite normal none;
+    font-family: "Micro 5";
+    font-size: 6rem;
+    transition: 0.5s;
+    animation: test 2s ease-in-out 0.5s infinite alternate none;
+    box-shadow: 3px 3px 3px 1px rgba(80, 34, 56, 0.66);
+    margin: 10px;
 }
 
 .btn:hover {
-    background-color: $color-black;
-    transform: translateY(30px);
+    background-color: $color-plum;
+    animation: test1 1.5s ease-in-out 0.1s infinite alternate none;
+}
+.btn:active {
+    transition: 0.1s;
+    color: $color-plum;
+    background-color: $color-light-blue;
 }
 
-@keyframes test {
+// @keyframes test {
+//     0% {
+//         transform: translateY(15px) translateX(-15px);
+//     }
+//     25% {
+//         transform: translateY(-15px) translateX(-15px);
+//     }
+//     50% {
+//         transform: translateY(-50px) translateX(-15px);
+//     }
+//     75% {
+//         transform: translateY(15px) translateX(-15px);
+//     }
+//     100% {
+//         transform: translateY(15px);
+//     }
+// }
+
+@keyframes test1 {
     0% {
-        transform: translateY(15px);
+        transform: translateX(0) translateY(0) rotateZ(0);
     }
     25% {
-        transform: translateX(15px);
+        transform: translateX(3px) translateY(-3px) rotateZ(2deg);
     }
     50% {
-        transform: translateX(-15px);
+         transform: translateX(-3px) translateY(3px) rotateZ(-2deg);
     }
     75% {
-        transform: translateY(30px);
+        transform: translateX(3px) translateY(-3px) rotateZ(-2deg);
     }
     100% {
-        transform: translateZ(-10px) translateY(-10px);
+        transform: translateX(-3px) translateY(-3px) rotateZ(2deg);
     }
 }

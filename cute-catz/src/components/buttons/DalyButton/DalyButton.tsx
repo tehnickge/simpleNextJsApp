@@ -18,9 +18,10 @@ const variant : {[key: string]: string} = {
     'success' : "btn-success",
     "danger"  : "btn-danger",
     "default" : "btn-default",
+    "primary-outline" : "btn-primary-outline",
 }
 
-console.log(Styles);
+
 export default function DalyButton(props: DalyButtonProps) {
   return (
         <button
