@@ -1,10 +1,14 @@
-.wrapper { 
-  background-color: red;
-}
+@import "./../common/content-container";
+@import "./../common/variables";
 
 .footer {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  width: 100vw;
+  
     &__label {
       color: aqua;
-
     }
   }

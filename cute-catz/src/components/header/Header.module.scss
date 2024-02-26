@@ -1,0 +1,13 @@
+@import "./../common/content-container";
+@import "./../common/variables";
+
+.header {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 15  vh;
+    background-color: rgba(0, 0, 0, 0.331);
+}
