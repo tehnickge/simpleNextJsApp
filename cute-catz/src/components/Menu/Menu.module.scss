@@ -1,0 +1,82 @@
+@import "./../common/variables";
+@import "./../common/fonts";
+
+.menu {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &__image {
+
+    }
+}
+
+ul.test {
+    margin-bottom: 500px;
+    position: relative;
+    transform: skewY(-15deg);
+    width: 400px;
+    transition: 0.5s;
+    li {
+        position: relative;
+        width: 200px;
+        background-color: rgb(250, 159, 250);
+        padding: 15px;
+        list-style: none;
+        transition: 0.5s;
+        a {
+            text-decoration: none;
+            color:brown;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: 0.5s;
+        }
+    }
+
+    li:hover {
+        transition: 0.5s;
+        background-color: $color-blue;
+        transform: translateX(40px) translateY(40px);
+        z-index: 1;
+        a {
+            
+            color: #fff;
+        }
+    }
+   li:hover::before {
+    transition: 0.5s;
+    background-color: rgb(30, 198, 210);
+   }
+   transition: 0.5s;
+   li:hover::after {
+    background-color: rgb(20, 228, 243);
+   }
+    
+    li::after {
+        transition: 0.5s;
+        left: 0px;
+        top: -40px;
+        width: 100%;
+        height: 40px;
+        content: '';
+        position: absolute;
+        background-color: rgb(246, 170, 246);
+        transform-origin: bottom;
+        transform: skewX(45deg);
+        z-index: -1;
+    }
+    li::before {
+        transition: 0.5s;
+        top: 0;
+        left: -40px;
+        width: 40px;
+        content: '';
+        position: absolute;
+        height: 100%;
+        background-color: violet;
+        transform-origin: right;
+        transform: skewY(45deg);
+        z-index: 0;
+    }
+    
+}
