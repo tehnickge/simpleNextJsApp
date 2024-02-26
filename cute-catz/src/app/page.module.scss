@@ -1,11 +1,17 @@
   @import "./../components/common/variables";
+  @import "./../components/common/content-container";
   .main {
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6rem;
-    min-height: 50vh;
-    max-width: $breakpoint-xxl;
+    justify-content: center;
+    min-height: 85vh;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .main button {
+    word-wrap: break-word;
+    
   }
 
