@@ -2,7 +2,10 @@
 @import "./../common/fonts";
 
 .menu {
-    margin: 0;
+    position: absolute;
+    top: 250px;
+    left: 10%;
+    margin: 10px;
     padding: 0;
     box-sizing: border-box;
     &__image {
@@ -11,21 +14,23 @@
 }
 
 ul.test {
-    margin-bottom: 500px;
+    box-sizing: border-box;
+    margin-bottom: 70px;
     position: relative;
     transform: skewY(-15deg);
-    width: 400px;
+    width: 4px;
     transition: 0.5s;
     li {
         position: relative;
         width: 200px;
-        background-color: rgb(250, 159, 250);
+        background-color: rgb(73, 73, 73);
         padding: 15px;
+        margin: -1px;
         list-style: none;
         transition: 0.5s;
         a {
             text-decoration: none;
-            color:brown;
+            color: #8a8a8a;
             display: block;
             text-transform: uppercase;
             letter-spacing: 0.05em;
@@ -36,7 +41,7 @@ ul.test {
     li:hover {
         transition: 0.5s;
         background-color: $color-blue;
-        transform: translateX(40px) translateY(40px);
+        transform: translateX(-40px);
         z-index: 1;
         a {
             
@@ -49,7 +54,7 @@ ul.test {
    }
    transition: 0.5s;
    li:hover::after {
-    background-color: rgb(20, 228, 243);
+    background-color: rgb(24, 240, 255);
    }
     
     li::after {
@@ -60,7 +65,7 @@ ul.test {
         height: 40px;
         content: '';
         position: absolute;
-        background-color: rgb(246, 170, 246);
+        background-color: rgb(89, 89, 89);
         transform-origin: bottom;
         transform: skewX(45deg);
         z-index: -1;
@@ -73,7 +78,7 @@ ul.test {
         content: '';
         position: absolute;
         height: 100%;
-        background-color: violet;
+        background-color: rgb(57, 57, 57);
         transform-origin: right;
         transform: skewY(45deg);
         z-index: 0;

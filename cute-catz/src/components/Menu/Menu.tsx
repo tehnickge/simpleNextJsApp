@@ -9,28 +9,18 @@ export interface MenuProps {
     links: MenuData[];
  //   children: string | React.ReactNode | React.ReactNode[] | undefined;
 }
-
 export default function Menu(props : MenuProps) {
 
 
 
     return (
         <div className={styles.menu}>
-            <div className="card__image">
-
-            </div>
             <ul className={styles.test}>
-            {props.links.forEach((link: MenuData, i: Number) => (<div>{console.log("jopa",link,i)}</div>))}
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>   
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
+            {props.links.map((link: MenuData, i: Number) => 
+            (<div key={link.title}><li style={{
+                zIndex: `${-i}`,
+            }}><a href={link.link}>{link.title}</a></li></div>))}
+               
             </ul>
         </div>
     )
