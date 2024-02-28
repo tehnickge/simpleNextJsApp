@@ -16,11 +16,10 @@ export default function Menu(props : MenuProps) {
     return (
         <div className={styles.menu}>
             <ul className={styles.test}>
-            {props.links.map((link: MenuData, i: Number) => 
+            {props.links && props.links.map((link: MenuData, i: Number) => 
             (<div key={link.title}><li style={{
                 zIndex: `${-i}`,
             }}><a href={link.link}>{link.title}</a></li></div>))}
-               
             </ul>
         </div>
     )

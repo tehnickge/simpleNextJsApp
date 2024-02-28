@@ -2,10 +2,8 @@
 @import "./../common/fonts";
 
 .menu {
-    position: absolute;
-    top: 250px;
-    left: 10%;
-    margin: 10px;
+    position: relative;
+    margin: 5px 100px;
     padding: 0;
     box-sizing: border-box;
     &__image {
