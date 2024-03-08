@@ -13,27 +13,6 @@ export const metadata: Metadata = {
   description: "we like to watch cute cats and smell candles",
 };
 
-const aboba : { 
-  title: string | undefined,
-  link: string | undefined }[] =
-[
-    {
-      title: "Home",
-      link: "/"
-    },
-    {
-      title: "JOPA",
-      link: "/"
-    },
-    {
-      title: "JOPA",
-      link: "/"
-    },
-    {
-      title: "JOPA",
-      link: "/"
-    },
-]
 
 export default function RootLayout({
   children,
@@ -45,7 +24,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <SessionProviderWithChildren>
           <Header></Header>
-          <Menu></Menu>
           {children}
           <Footer></Footer>
         </SessionProviderWithChildren>

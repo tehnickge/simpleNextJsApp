@@ -36,7 +36,7 @@ export default function Home() {
         kekv
       </DalyButton>
       <DalyButton variant="primary-outline" size="lg">
-        i love you
+        i love you krot 
       </DalyButton>
     </main>
   );
