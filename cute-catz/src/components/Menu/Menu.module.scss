@@ -1,26 +1,22 @@
 @import "./../common/variables";
 @import "./../common/fonts";
+@import "./../common/mixsins";
 
 .menu {
     position: relative;
-    margin: 5px 100px;
-    padding: 0;
+    margin: 0 auto;
     box-sizing: border-box;
-    &__image {
-
-    }
 }
 
 ul.test {
     box-sizing: border-box;
-    margin-bottom: 70px;
     position: relative;
     transform: skewY(-15deg);
     width: 4px;
     transition: 0.5s;
     li {
         position: relative;
-        width: 200px;
+        width: 100px;
         background-color: rgb(73, 73, 73);
         padding: 15px;
         margin: -1px;
@@ -42,7 +38,6 @@ ul.test {
         transform: translateX(-40px);
         z-index: 1;
         a {
-            
             color: #fff;
         }
     }
@@ -82,4 +77,35 @@ ul.test {
         z-index: 0;
     }
     
+}
+
+
+@include desktop-large {
+    .menu {
+        
+    }
+}
+
+@include desktop {
+    .menu {
+        
+    }
+}
+
+@include laptop {
+    .menu {
+        display: none;
+    }
+}
+
+@include tablet { 
+    .menu {
+        display: none;
+    }
+}
+
+@include mobile { 
+    .menu {
+        display: none;
+    }
 }

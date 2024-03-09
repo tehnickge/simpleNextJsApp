@@ -11,8 +11,6 @@ export interface MenuProps {
 }
 export default function Menu(props : MenuProps) {
 
-
-
     return (
         <div className={styles.menu}>
             <ul className={styles.test}>

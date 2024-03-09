@@ -1,5 +1,6 @@
 @import "./../common/content-container";
 @import "./../common/variables";
+@import "./../common/content-container";
 
 .footer {
   margin: auto;
@@ -7,6 +8,8 @@
   justify-content: center;
   background-color: red;
   width: 100vw;
+  min-height: 15vh;
+  max-height: 15vh;
   
     &__label {
       color: aqua;

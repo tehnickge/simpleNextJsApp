@@ -1,5 +1,7 @@
 @import "./../common/content-container";
 @import "./../common/variables";
+@import "./../common/content-container";
+@import "./../common/mixsins";
 
 .header {
     display: flex;
@@ -8,6 +10,31 @@
     flex-direction: row;
     justify-content: center;
     padding: 2rem;
-    min-height: 15  vh;
-    background-color: rgba(0, 0, 0, 0.331);
+    min-height: 15vh;
+    max-height: 15vh;
+    background-color: rgba(200, 120, 240, 1);
+}
+
+@include desktop-large {
+   .header {
+        display: none;
+   }
+}
+
+@include desktop { 
+    .header {
+        display: none;
+   }
+}
+
+@include laptop {
+
+}
+
+@include tablet { 
+    
+}
+
+@include mobile { 
+   
 }

@@ -1,7 +1,8 @@
   @import "./../components/common/variables";
   @import "./../components/common/content-container";
-  .main {
-    margin: 0 auto;
+  @import "./../components/common/mixsins";
+.main {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,9 +12,45 @@
     button {
       word-wrap: break-word;
     }
-  }
+}
 
-  .test {
+.test {
     font-size: 100px;
-  }
+}
 
+@include desktop-large {
+  .test {
+    font-size: 60px;
+  }
+}
+
+@include desktop {
+  .test {
+    font-size: 52px;
+  }
+}
+
+@include laptop {
+  .test {
+    font-size: 42px;
+  }
+}
+
+@include tablet { 
+  .test {
+    font-size: 24px;
+  }
+}
+
+@include mobile { 
+  .test {
+    font-size: 16px;
+  }
+}
+
+.menu-container { 
+  z-index: 3;
+  position: absolute;
+  top: 45vh;
+  left: 0;
+}

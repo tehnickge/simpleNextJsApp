@@ -1,5 +1,7 @@
 @import "./../../common/variables";
 @import "./../../common/fonts";
+@import "./../../common/mixsins";
+
 
 $btn-variant: (
     primary blueviolet white none,
@@ -32,9 +34,8 @@ $btn-size: (
 
 @each $name, $size in $btn-size {
     .btn.btn-#{$name} {
-        padding: $size;
+        padding: 8px $size * 1.25;
         border-radius: $size + 2px;
-        font-size: $size * 1,5; 
     }
 }
 
@@ -90,5 +91,36 @@ $btn-size: (
     }
     100% {
         transform: translateX(-3px) translateY(-3px) rotateZ(2deg);
+    }
+}
+
+
+@include desktop-large {
+    .btn {
+        font-size: 72px;
+    }
+}
+
+@include desktop {
+    .btn {
+        font-size: 60px;
+    }
+}
+
+@include laptop {
+    .btn {
+        font-size: 42px;
+    }
+}
+
+@include tablet {
+    .btn {
+        font-size: 36px;
+    }
+}
+
+@include mobile {
+    .btn {
+        font-size: 32px;
     }
 }
