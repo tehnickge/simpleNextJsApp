@@ -13,6 +13,8 @@
     min-height: 15vh;
     max-height: 15vh;
     background-color: rgba(200, 120, 240, 1);
+    position:fixed;
+    z-index: 3;
 }
 
 @include desktop-large {
@@ -28,13 +30,19 @@
 }
 
 @include laptop {
-
+    .header {
+        display: flex;
+   }
 }
 
 @include tablet { 
-    
+    .header {
+        display: flex;
+   }
 }
 
 @include mobile { 
-   
+    .header {
+        display: flex;
+   }
 }

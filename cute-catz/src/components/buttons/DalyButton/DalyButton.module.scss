@@ -46,6 +46,10 @@ $btn-size: (
     animation: test 2s ease-in-out 0.5s infinite alternate none;
     box-shadow: 3px 3px 3px 1px rgba(80, 34, 56, 0.66);
     margin: 10px;
+    cursor:pointer;
+    &__label {
+        cursor:pointer;
+    }
 }
 
 .btn:hover {
@@ -98,29 +102,36 @@ $btn-size: (
 @include desktop-large {
     .btn {
         font-size: 72px;
+        &__label {
+            letter-spacing: 8px;
+        }
     }
 }
 
 @include desktop {
     .btn {
         font-size: 60px;
+        letter-spacing: 6px;
     }
 }
 
 @include laptop {
     .btn {
         font-size: 42px;
+        letter-spacing: 4px;
     }
 }
 
 @include tablet {
     .btn {
         font-size: 36px;
+        letter-spacing: 4px;
     }
 }
 
 @include mobile {
     .btn {
         font-size: 32px;
+        letter-spacing: 4px;
     }
 }

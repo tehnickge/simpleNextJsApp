@@ -1,0 +1,13 @@
+@import "./../common/variables";
+@import "./../common/fonts";
+@import "./../common/mixsins";
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: flex-start;    
+    background-color: #bbdefb;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+}

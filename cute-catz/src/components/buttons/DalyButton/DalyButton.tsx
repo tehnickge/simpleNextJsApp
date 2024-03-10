@@ -1,10 +1,19 @@
 import Styles from "./DalyButton.module.scss";
+import { JazzBallThin, JazzBallBold, BIPs } from "@/components/common/fonts";
 
 export interface DalyButtonProps {
-  size: string;
-  variant: string;
-  children: string | React.ReactNode | React.ReactNode[] | undefined;
+  size: string,
+  variant: string,
+  font: string,
+  children: string | React.ReactNode | React.ReactNode[] | undefined,
 }
+
+const font :{[key: string]: string} = {
+  "jazzt" : JazzBallThin.className,
+  "jazzb" : JazzBallBold.className,
+  "bips" : BIPs.className,
+  "" : "",
+};
 
 const size :{[key: string]: string} = {
   "xs" : "btn-xs",
@@ -29,7 +38,7 @@ export default function DalyButton(props: DalyButtonProps) {
             Styles[size[props.size]]
           }`}
         >
-          {props.children}
+          <label className={`${font[props.font]} ${Styles.btn__label}`}>{props.children}</label>
         </button>
   );
 }

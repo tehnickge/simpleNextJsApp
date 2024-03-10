@@ -8,7 +8,6 @@
     justify-content: center;
     min-height: 85vh;
     width: 100%;
-
     button {
       word-wrap: break-word;
     }
@@ -19,30 +18,50 @@
 }
 
 @include desktop-large {
+  .main {
+    margin-top: 0;
+  }
+
   .test {
     font-size: 60px;
   }
 }
 
 @include desktop {
+  .main {
+    margin-top: 0;
+  }
+
   .test {
     font-size: 52px;
   }
 }
 
 @include laptop {
+  .main {
+    margin-top: 15vh;
+  }
+
   .test {
     font-size: 42px;
   }
 }
 
 @include tablet { 
+  .main {
+    margin-top: 15vh;
+  }
+
   .test {
     font-size: 24px;
   }
 }
 
 @include mobile { 
+  .main {
+    margin-top: 15vh;
+  }
+
   .test {
     font-size: 16px;
   }
