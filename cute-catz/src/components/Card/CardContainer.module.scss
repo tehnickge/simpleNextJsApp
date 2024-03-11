@@ -3,6 +3,9 @@
 @import "./../common/mixsins";
 
 .card-container {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 55vh;
     display: flex;
     justify-content: space-evenly; 
     align-items: flex-start;    

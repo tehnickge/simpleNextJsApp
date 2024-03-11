@@ -6,10 +6,12 @@
     padding: 0;
     box-sizing: border-box;
     &__images {
-
+        image {
+            width: 500px;
+            height: 500px;
+        }
     }
     &__title {
-        
     }
     
 }
