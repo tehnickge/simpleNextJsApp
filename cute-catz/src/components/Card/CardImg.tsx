@@ -39,7 +39,7 @@ export default function CardImg(props: CardImgProps): JSX.Element {
           {[...Array(picsCount)].map((e,i) => {
             return (
               <>
-                { i === 0 ? (<input type="radio" name={id} value={`${i}00%`} key={i} defaultChecked onChange={changeRadioSwitchHandler}  ></input> ) : (
+                { i === 0 ? (<input type="radio" name={id} value={`${i}00%`} key={i} defaultChecked onChange={changeRadioSwitchHandler}></input> ) : (
                 <input type="radio" key={i} name={id} onChange={changeRadioSwitchHandler} value={`${i}00%`}></input>  )}
               </>
             );
