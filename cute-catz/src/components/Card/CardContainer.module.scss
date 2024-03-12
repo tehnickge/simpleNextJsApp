@@ -3,14 +3,15 @@
 @import "./../common/mixsins";
 
 .card-container {
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 55vh;
     display: flex;
+    box-sizing: border-box;
+    background-color: rgba(140, 45, 170, 1);
     justify-content: space-evenly; 
-    align-items: flex-start;    
-    background-color: #bbdefb;
+    align-items: flex-start; 
+    flex-flow: wrap;   
+    flex-wrap: wrap; 
     height: 100%;
-    padding: 15px;
+    width: 100%;
     gap: 5px;
+
 }

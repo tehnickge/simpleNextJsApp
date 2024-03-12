@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styles from "./Card.module.scss"
+import CardImg from "./CardImg"
 
 export type CardProps = {
     info : string,
@@ -13,16 +14,8 @@ export default function Card(props : CardProps) : JSX.Element {
 
     return (
         <div className={styles.card}>
-            <div className={styles[`card__images`]}>
-                {props.pics && props.pics.map((pic) => {
-                        return (<image 
-                            key={pic}
-                            href={pic} 
-                            ></image>)
-                    } 
-                )}
-            </div>
-            <div>
+                <CardImg cardImgData={props}></CardImg>
+            <div className={styles.card__info}>
                 <label>{props.title}</label>
             </div>
         </div>
