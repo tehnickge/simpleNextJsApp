@@ -9,7 +9,7 @@ export interface MenuProps {
     links: MenuData[];
  //   children: string | React.ReactNode | React.ReactNode[] | undefined;
 }
-export default function Menu(props : MenuProps) {
+export default function Menu(props : MenuProps) : JSX.Element {
 
     return (
         <div className={styles.menu}>

@@ -6,16 +6,15 @@ export type CardArrayProps = {
     cards: CardProps[];
 }
 
-export default function CardContainer(props : CardArrayProps) : JSX.Element {
-
+export default function CardContainer({cards} : CardArrayProps) : JSX.Element {  
     return (
     <div className={styles[`card-container`]}>
-        {props.cards && props.cards.map(card => <Card 
-        id={card.id}
-        key={card.id}
-        info={card.info}
-        pics={card.pics}
-        title={card.title}
+        {cards && cards.map(({id,info,pics,title}) => <Card 
+        id={id}
+        key={id}
+        info={info}
+        pics={pics}
+        title={title}
          ></Card>)}
     </div>
     ) 

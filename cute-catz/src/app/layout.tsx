@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { SessionProviderWithChildren } from "@/components/providers/SessionProviders";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import "./globals.scss";
@@ -45,14 +44,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <SessionProviderWithChildren>
           <Header></Header>
           <div className={`${styles["menu-container"]}`}>
             <Menu links={aboba}></Menu>
           </div>
           {children}
           <Footer></Footer>
-        </SessionProviderWithChildren>
       </body>
     </html>
   );

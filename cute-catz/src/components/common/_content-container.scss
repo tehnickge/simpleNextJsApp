@@ -11,34 +11,34 @@
 @include desktop-large {
     .content-container {
         max-width: 65vw;
-        background-color: rgb(255, 0, 204);
+        // background-color: rgb(255, 0, 204);
     }
 }
 
 @include desktop {
     .content-container {
         max-width: 65vw;
-        background-color: red;
+        // background-color: red;
     }
 }
 
 @include laptop {
     .content-container {
         max-width: 70vw;
-        background-color: rgb(255, 230, 0);
+        // background-color: rgb(255, 230, 0);
     }
 }
 
 @include tablet { 
     .content-container {
         max-width: 100%;
-        background-color: rgb(0, 255, 0);
+        // background-color: rgb(0, 255, 0);
     }
 }
 
 @include mobile { 
     .content-container {
         max-width: 100%;
-        background-color: rgb(0, 21, 255);
+        // background-color: rgb(0, 21, 255);
     }
 }

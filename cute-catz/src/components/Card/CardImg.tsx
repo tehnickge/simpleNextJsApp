@@ -11,7 +11,7 @@ export default function CardImg(props: CardImgProps): JSX.Element {
   const [switchingSize, setSwitchingSize] = useState("000%");
   const [picsCount, setPicsCount] = useState(0);
 
-  const handlers = useSwipeable({
+  const swipeHandlers = useSwipeable({
     onSwipedLeft: (eventData) => setSwitchingSize((prev) => {
       let number = Number(prev[0]) > picsCount - 2 ? picsCount -1 : Number(prev[0]) + 1;
       return ((`${number}00%`));
@@ -37,7 +37,7 @@ export default function CardImg(props: CardImgProps): JSX.Element {
       style={{
         position: "relative",
       }}
-      {...handlers}
+      {...swipeHandlers}
     >
       <div
         className={styles["card__images"]}
