@@ -41,7 +41,7 @@ $btn-size: (
 
 .btn {
     font-family: "Micro 5";
-    font-size: 6rem;
+    font-size: calc(14px + 32 * (100vw - 320px) / 880);
     transition: 0.5s;
     animation: test 2s ease-in-out 0.5s infinite alternate none;
     box-shadow: 3px 3px 3px 1px rgba(80, 34, 56, 0.66);
@@ -101,7 +101,6 @@ $btn-size: (
 
 @include desktop-large {
     .btn {
-        font-size: 72px;
         &__label {
             letter-spacing: 8px;
         }

@@ -9,4 +9,33 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: $text-xxl;
+}
+h2 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: $text-xl;
+}
+h3 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: $text-l;
+}
+h4 {
+  text-align: justify;
+  margin: 0 auto;
+  font-size: $text-l;
+}
+h5 {
+  text-align: justify;
+  margin: 0 auto;
+  font-size: $text-s;
+}
+h6 {
+  text-align: justify;
+  margin: 0 auto;
+  font-size: $text-xs;
+}

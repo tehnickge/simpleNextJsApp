@@ -107,6 +107,12 @@ export default function Home() {
       <div style={{ fontSize: "64px" }}>ABOBA</div>
       <div style={{ fontSize: "64px" }}>ABOBA</div>
       <CardContainer cards={itemData}></CardContainer>
+      <h1>DSFDFKJGHFDJKGfdsfaflkdsjgffdhgkdjgk fdhgjklh|;g fdg h gsdfguds ghdg dughkljhdsghs</h1>
+      <h2>DSFDFKJGHFDJKGfdsfaflkdsjgffdhgkdjgk fdhgjklh|;g fdg h gsdfguds ghdg dughkljhdsghs</h2>
+      <h3>DSFDFKJGHFDJKGfdsfaflkdsjgffdhgkdjgk fdhgjklh|;g fdg h gsdfguds ghdg dughkljhdsghs</h3>
+      <h4>DSFDFKJGHFDJKGfdsfaflkdsjgffdhgkdjgk fdhgjklh|;g fdg h gsdfguds ghdg dughkljhdsghs</h4>
+      <h5>DSFDFKJGHFDJKGfdsfaflkdsjgffdhgkdjgk fdhgjklh|;g fdg h gsdfguds ghdg dughkljhdsghs</h5>
+      <h6>DSFDFKJGHFDJKGfdsfaflkdsjgffdhgkdjgk fdhgjklh|;g fdg h gsdfguds ghdg dughkljhdsghs</h6>
     </main>
   );
 }

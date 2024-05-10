@@ -2,9 +2,16 @@ $color-plum: #9d6381;
 $color-black: #0d1f22;
 $color-skin: #ffd7d1;
 $color-light-blue: #c7e8f3;
-$color-blue: #00e8fc; 
+$color-blue: #00e8fc;
 
 $breakpoint-xxl: 1200px;
 $breakpoint-xl: 1024px;
 $breakpoint-md: 767px;
 $breakpoint-sm: 576px;
+
+$text-xxl: calc(14px + 32 * (100vw - 320px) / 880);
+$text-xl: calc(12px + 26 * (100vw - 320px) / 880);
+$text-l: calc(12px + 18  * (100vw - 320px) / 880);
+$text-m: calc(10px + 16 * (100vw - 320px) / 880);
+$text-s: calc(8px + 14 * (100vw - 320px) / 880);
+$text-xs: calc(8px + 12 * (100vw - 320px) / 880);

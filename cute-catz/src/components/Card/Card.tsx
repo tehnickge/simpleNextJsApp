@@ -14,7 +14,7 @@ export default function Card(props: CardProps): JSX.Element {
   return (
     <a>
       <div className={styles.card}>
-        <CardImg cardImgData={props}></CardImg>
+        <CardImg cardImgData={props.pics}></CardImg>
         <div className={`${styles.card__info} ${JazzBallThin.className}`}>
           <div className={styles["card__info-wrapper"]}>
             <div className={styles.card__price}>
